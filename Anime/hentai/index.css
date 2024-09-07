@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('imagen/fondo.jpg'); /* Añadir el mismo fondo */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el contenedor */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px; /* Limita el tamaño del contenedor */
+    width: 90%; /* Asegura que el contenedor sea responsivo */
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#siBtn, #noBtn {
+    padding: 20px 30px;
+    font-size: 25px;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+#siBtn {
+    background-color: #00b894; /* Verde */
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+#siBtn:hover {
+    transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+}
+
+#noBtn {
+    background-color: #d63031; /* Rojo */
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+#noBtn:hover {
+    transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+}
+
+.bg-green {
+    background-color: #ffffff; /* Nuevo color de fondo */
+}
+
+#messageContainer {
+    font-size: 28px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    color: #ee1111; /* Color rojo para el mensaje */
+    font-family: 'Pacifico', cursive; /* Fuente personalizada */
+    text-shadow: 2px 2px 4px hwb(0 7% 16%); /* Sombra de texto */
+    animation: pulse 0.5s infinite alternate; /* Animación pulsante */
+}
+
+#question {
+    font-size: 40px; /* Tamaño de fuente grande */
+    font-family: 'Raleway', sans-serif; /* Fuente personalizada */
+    text-shadow: 2px 2px 4px #111; /* Sombra de texto */
+    color: #c21f1f;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3); /* Zoom más grande */
+    }
+}

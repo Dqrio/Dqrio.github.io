@@ -1,0 +1,598 @@
+  body {
+    background-color: hsla(0, 3%, 53%, 0.46);
+    background-image: radial-gradient(circle at 80% 100%, hsla(0, 3%, 18%, 1) 0%, transparent 50%);
+    background-blend-mode: normal;
+  }
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+
+/* Nuevas reglas para los gifs y su contenedor */
+.top-mejor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.top-mejor div {
+  flex: 1 1 30%; /* Por defecto, 30% de ancho */
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-mejor div a {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  /* height: 200px; */
+  /* line-height: 200px; */
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  justify-content: center;
+}
+
+.top-mejor div a:hover {
+  color: #f39c12;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+/* Si usas flexbox o grid en el contenedor de los divs de anime */
+.anime-container {
+  display: flex;
+  gap: 20px; /* Espacio entre los divs */
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGENES DE LOS ANIMES TOP */
+.anime-top1 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgb(32, 37, 57, 0.7)), url(https://areajugones.sport.es/wp-content/uploads/2020/04/dragon-ball-23.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-top2 {
+  background-image:  linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)),  url(https://th.bing.com/th/id/OIP.Llk8pTbKVu8026dQslOXdgEsC7?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-top3 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.a4lDBATCuT7X8_TitTdqfwHaEK?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-top4 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.NCTZCB2wX0z-Xjz1QkFhHwHaEK?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-top5 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://elvortex.com/wp-content/uploads/2021/02/kimetsu-no-yaiba-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+/* IMAGENES DE LOS ANIMES DE ACCION */
+.anime-accion1 {
+  background-image:linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)),  url(https://th.bing.com/th/id/OIP.6Hh5Muqehoc_1pU925EzOAHaEK?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-accion2 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.0c50712d91cd3b9147e4f10492e61f9b?rik=SrGWZCtRAO97LA&pid=ImgRaw&r=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-accion3 {
+  background-image:linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)),  url(https://images7.alphacoders.com/459/459039.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-accion4 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.Kt9WEWeW1ULgGjmqmx3ASgHaEK?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-accion5 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://somoskudasai.com/wp-content/uploads/2022/11/shingeki-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+/* IMAGENES DE LOS ANIMES DE HORROR */
+.anime-horror1 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.13c0868d9296507199f04315fc1eb4f5?rik=x%2bITsAxd3LWxkA&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33700000%2fAO-NO-EXORCIST-ao-no-exorcist-33700913-1440-900.jpg&ehk=hSbCv%2f%2f6kpzYmyhwsTNgrZ9aXX%2bXtAKLPJsSStEwtsk%3d&risl=&pid=ImgRaw&r=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-horror2 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.a3bb4216d6bf76e1bfdd94f723401e68?rik=MRi76qZLbwsr%2bg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2f8%2fc%2f113419.jpg&ehk=7HH3G%2fB%2b98EZSvdhVYry%2b8UnVnlvUgdm%2bf82MysxBog%3d&risl=&pid=ImgRaw&r=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-horror3 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.ap4TavVYZUxnZPYceFaeQQHaEu?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-horror4 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.da1d391d0e5101e7ed85499c8eb8a057?rik=fpipdyIReMCHMQ&pid=ImgRaw&r=0  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-horror5 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://www.wallpaperflare.com/static/473/262/421/anime-tokyo-ghoul-kaneki-ken-tokyo-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+/* IMAGENES DE LOS ANIMES DE ROMANCE */
+.anime-romance1 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.f7qP3N0FCV0bradAdYkexwHaEi?pid=ImgDet&w=474&h=290&rs=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-romance2 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.0b262b4ebdefd3ac82063b300ab15044?rik=Ix8b6ngulH5HBw&pid=ImgRaw&r=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-romance3 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.6wzgiXMdVBhlMnPi7ril5AHaFi?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-romance4 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.AgyFW57Yp9x6MV8QV2qmDwHaD4?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-romance5 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.MgkiF3CLErq-ZfZbf6K1vQHaFV?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+/* IMAGENES DE LOS ANIMES HENTAI */
+.anime-hentai1 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.skssjiunsod9aM-faHYD1wHaFj?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-hentai2 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://himg.nl/images/hh/tsuma_no_haha_sayuri-1v/s_poster.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-hentai3 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/OIP.WhI-Y22U_Ak2pKP8RLl3DwEsDh?rs=1&pid=ImgDetMain);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+.anime-hentai4 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://th.bing.com/th/id/R.efa3a6918eb4a385d63fadc05d9e2b5e?rik=p4PhGuvpo%2fA3QA&pid=ImgRaw&r=0  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */ 
+}
+
+.anime-hentai5 {
+  background-image: linear-gradient(rgba(221, 161, 70, 0.726), rgba(0, 0, 0, 0.555)), url(https://hentaila.io/wp-content/uploads/2022/08/resort-boin-uncensored-re-release-1-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área del div */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin: 10px; /* Margen alrededor de cada div */
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}

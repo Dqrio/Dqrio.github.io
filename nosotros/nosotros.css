@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    background-color: hsla(0, 3%, 53%, 0.46);
+    background-image: radial-gradient(circle at 80% 100%, hsla(0, 3%, 18%, 1) 0%, transparent 50%);
+    background-blend-mode: normal;
+  }
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.miembro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.miembro img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.valores ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+blockquote {
+    border-left: 4px solid #333;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .miembro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .miembro img {
+        margin-bottom: 1rem;
+    }
+}
